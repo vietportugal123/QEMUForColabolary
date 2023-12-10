@@ -9,7 +9,7 @@ sudo apt install qemu-system-x86-xen -y
 sudo apt install qemu-system-x86 -y
 qemu-img create -f raw windows10.img 32G
 wget -O virtio-win.iso 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.215-1/virtio-win-0.1.215.iso'
-wget -O windows10.iso 'https://dl.malwarewatch.org/windows/Windows%2010%201507.iso'
+wget -O windows10.iso 'https://dl.bobpony.com/windows/10/en_windows_10_enterprise_2015_ltsb_x86_dvd_6848454.iso'
 clear
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
 sudo qemu-system-x86_64 \
